@@ -17,7 +17,7 @@ unordered_set<string> dictionarySetup(int& largest){
     largest = 0;
     unordered_set<string> u;
     ifstream file;
-    file.open("/Users/sayanjain/Desktop/CSCI 61/WEEK 10/WEEK 10/words.txt");
+    file.open("words.txt");
     if(!file.is_open()){
     cout<<"Unable to open the file."<<endl;
         return u;
@@ -77,7 +77,7 @@ vector<answer> puzzleSolve(unordered_set<string> dictionary, int largest){
     fstream file;
     int i=0,j=0;
     vector<answer> v;
-    file.open("/Users/sayanjain/Desktop/CSCI 61/WEEK 10/WEEK 10/puzzle.txt");
+    file.open("puzzle.txt");
     string s;
     getline(file,s);
     int size=0;
@@ -89,7 +89,7 @@ vector<answer> puzzleSolve(unordered_set<string> dictionary, int largest){
     char c;
     char puzzle[size][size];
     file.close();
-    file.open("/Users/sayanjain/Desktop/CSCI 61/WEEK 10/WEEK 10/puzzle.txt");
+    file.open("puzzle.txt");
     while(file >> c){
         puzzle[i][j] = c;
         j++;
