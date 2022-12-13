@@ -1,9 +1,5 @@
-//
-//  Q3.cpp
-//  WEEK 10
-//
-//  Created by Sayan Jain on 11/28/22.
-//
+//  Created by cyanide1209 on 11/28/22.
+
 
 
 #include <iostream>
